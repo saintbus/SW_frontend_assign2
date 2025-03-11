@@ -1,0 +1,19 @@
+.main {
+    font-size: 24px;
+}
+
+.option, .text_input, .join_land {
+    font-size: 14px;
+}
+
+.back {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+#student_name {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Booking Session</title>
+        <link rel="stylesheet" href="booking_style.css">
+    </head>
+
+    <body>
+        <h1 class="trip_head">Booking Session</h1>
+        <p class="main">
+            Package Option : <br>
+            <select id="package_type" name="package_type" size="1" class="option">
+                <option value="tokyo">1. Tokyo Adventure (3 Days)</option>
+                <option value="kyoto">2. Kyoto Cultural Escape (3 Days)</option>
+                <option value="hokkaido">3. Hokkaido Nature Retreat (3 Days)</option>
+            </select>
+
+            <div class="main">
+                Tour Type Option : <br>
+                <select id="tour_type" name="tour_type" size="1" class="option">
+                    <option value="small">Small Group (10-15 people)</option>
+                    <option value="standard">Standard Group (35-40 people)</option>
+                </select>
+                <form id="join_land" class="join_land">
+                    <input type="checkbox" id="join_land" name="join_land" checked>
+                    <label for="join_land">Join Land (Buy airplane ticket by)</label>
+                </form>
+            </div>
+
+            <p class="main">
+                Your Detail : <br>
+                <form>
+                    <input type="number" id="quant" name="quant"  min="1" placeholder="Quantity of reservation" class="text_input">
+                    <input type="text" id="name" name="name" placeholder="Fullname - Lastname" class="text_input">
+                    <input type="text" id="tel" name="tel" placeholder="Telephone number" class="text_input">
+                </form>
+            </p>
+        </p>
+
+        <div class="back">
+            <a href="index.html">Back to Package Detail</a>
+        </div>
+
+        <h1 id="student_name">6733074821_TrinBussmuangpak</h1>
+
+    </body>
+</html>

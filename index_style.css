@@ -1,0 +1,23 @@
+.image_container {
+    display: flex;
+    align-items: stretch;
+}
+
+.same_height {
+    height: 300px;
+    object-fit: cover;
+}
+
+.same_height_right {
+    height: 300px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+#student_name {
+    text-align: right;
+}
+
+.trip_detail, .to_booking {
+    font-size: 24px;
+}
