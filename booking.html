@@ -3,6 +3,7 @@
     <head>
         <title>Booking Session</title>
         <link rel="stylesheet" href="booking_style.css">
+        <script src="booking.js"></script>
     </head>
 
     <body>
@@ -21,18 +22,19 @@
                     <option value="small">Small Group (10-15 people)</option>
                     <option value="standard">Standard Group (35-40 people)</option>
                 </select>
-                <form id="join_land" class="join_land">
-                    <input type="checkbox" id="join_land" name="join_land" checked>
-                    <label for="join_land">Join Land (Buy airplane ticket by)</label>
+                <form id="join_land_form">
+                    <input type="checkbox" id="join_land" name="join_land" onclick="clickJoin()">
+                    <label for="join_land">Join Land (Buy airplane ticket by yourself)</label>
                 </form>
             </div>
 
             <p class="main">
                 Your Detail : <br>
                 <form>
-                    <input type="number" id="quant" name="quant"  min="1" placeholder="Quantity of reservation" class="text_input">
-                    <input type="text" id="name" name="name" placeholder="Fullname - Lastname" class="text_input">
-                    <input type="text" id="tel" name="tel" placeholder="Telephone number" class="text_input">
+                    <input type="number" id="quant" name="quant" min="1" max="15" placeholder="Quantity of reservation" onclick="alert('Qauntity of reservation can only in range 1-15')" class="text_input">
+                    <input type="text" id="name" name="name" placeholder="Firstname - Lastname" class="text_input">
+                    <input type="text" id="tel" name="tel" placeholder="Telephone number" class="text_input"> <br> <br>
+                    <input type="button" id="submit" name="submit" value="Submit" onclick="check()">
                 </form>
             </p>
         </p>
